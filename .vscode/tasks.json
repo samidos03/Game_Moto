@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build game x64",
+      "type": "shell",
+      "command": "C:/mingw64/bin/x86_64-w64-mingw32-g++.exe",  
+      "args": [
+        "-std=c++17",
+        "-Isrc",
+        "-Isrc/Obstacles",
+        "-IC:/dev/SDL2-2.32.4/SDL2-2.32.4/x86_64-w64-mingw32/include/SDL2",
+        "-IC:/dev/SDL2_image-2.8.2/SDL2_image-2.8.2/x86_64-w64-mingw32/include/SDL2",
+        "-IC:/dev/SDL2_ttf-2.22.0/SDL2_ttf-2.22.0/x86_64-w64-mingw32/include/SDL2",
+        "-IC:/dev/SDL2_mixer-2.8.0/SDL2_mixer-2.8.0/x86_64-w64-mingw32/include/SDL2",
+        "main.cpp",
+        "src/Core/Engine.cpp",
+        "src/Graphics/TextureManager.cpp",
+        "src/Menu/MainMenu.cpp",
+        "src/Objects/Player.cpp",
+        "src/Obstacles/Obstacle.cpp",
+        "src/Audio/AudioManager.cpp",
+        "-LC:/dev/SDL2-2.32.4/SDL2-2.32.4/x86_64-w64-mingw32/lib",
+        "-LC:/dev/SDL2_image-2.8.2/SDL2_image-2.8.2/x86_64-w64-mingw32/lib",
+        "-LC:/dev/SDL2_ttf-2.22.0/SDL2_ttf-2.22.0/x86_64-w64-mingw32/lib",
+        "-LC:/dev/SDL2_mixer-2.8.0/SDL2_mixer-2.8.0/x86_64-w64-mingw32/lib",
+        "-lmingw32", "-lSDL2main", "-lSDL2",
+        "-lSDL2_image", "-lSDL2_ttf", "-lSDL2_mixer",
+        "-static-libgcc", "-static-libstdc++",
+        "-o", "${workspaceFolder}/bin/Debug/Game.exe"
+      ],
+      "group": { "kind": "build", "isDefault": true }
+    }
+  ]
+}

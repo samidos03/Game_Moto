@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Launch MotoGame",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/bin/Debug/GameEngine_2D.exe",
+        "cwd": "${workspaceFolder}",
+        "externalConsole": true,
+        "preLaunchTask": "build game"
+      }
+    ]
+  }
+  

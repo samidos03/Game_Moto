@@ -32,3 +32,9 @@ Un jeu de moto développé en C / SDL où le joueur traverse les rues de **Jamaa
 ```bash
 gcc main.c -o game -lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf
 ./game
+
+![Écran de victoire](assets/win.png)
+![Menu principal](assets/menu.png)
+![Écran de fin de jeu](assets/game_over.png)
+![Interface du jeu](assets/interface.png)
+![Page des propos](assets/propos.png)

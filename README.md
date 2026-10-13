@@ -1,41 +1,81 @@
 # 🏍️ Game Moto – Jamaa El Fna
 
-Un jeu de moto développé en C / SDL où le joueur traverse les rues de **Jamaa El Fna** à Marrakech. Ce projet est réalisé dans le cadre d’un exercice ou d’un apprentissage personnel en développement de jeux.
+A motorcycle game developed in C using SDL2, where the player rides through streets inspired by **Jamaa El Fna Square in Marrakech, Morocco**. This project was created as part of a programming exercise and personal game development learning experience.
 
 ---
 
-## 🎮 Fonctionnalités
+## 🎮 Features
 
-- Contrôle de la moto avec le clavier  
-- Gestion des collisions  
-- Animation des éléments  
-- Sons et effets visuels (si SDL_mixer utilisé)  
-- Scène inspirée de la célèbre place Jamaa El Fna  
-
----
-
-## 🛠️ Technologies utilisées
-
-- **Langage** : C  
-- **Bibliothèque** : SDL2, SDL2_image, SDL2_ttf, SDL2_mixer  
-- **IDE recommandé** : Visual Studio Code  
+- Motorcycle controls using the keyboard
+- Collision detection
+- Animated game elements
+- Sound effects and audio support (if SDL_mixer is configured)
+- A game environment inspired by the famous Jamaa El Fna Square
 
 ---
 
-## 🚀 Lancer le projet
+## 🛠️ Technologies Used
 
-### 1. Installer SDL2 :  
-- Télécharger SDL2 (SDL2.dll, headers et librairies)  
-- Lier les bibliothèques dans votre IDE  
+- **Programming Language:** C
+- **Libraries:** SDL2, SDL2_image, SDL2_ttf, SDL2_mixer
+- **Recommended IDE:** Visual Studio Code
 
-### 2. Compiler (exemple sous Linux) :  
+---
+
+## 🚀 How to Run the Project
+
+### 1. Install SDL2
+
+- Download and install SDL2 and the required extensions.
+- Configure the headers and libraries in your development environment.
+- Make sure the required SDL DLL files are available when running the game on Windows.
+
+### 2. Compile the Project
+
+Example command for Linux:
+
 ```bash
 gcc main.c -o game -lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf
-./game
-###Description (images): 
+```
 
-![Écran de victoire](assets/win.png)
-![Menu principal](assets/menu.png)
-![Écran de fin de jeu](assets/game_over.png)
-![Interface du jeu](assets/interface.png)
-![Page des propos](assets/propos.png)
+Run the game:
+
+```bash
+./game
+```
+
+Make sure the source files and SDL dependencies match your project configuration.
+
+---
+
+## 🖼️ Game Screenshots
+
+### 🏆 Victory Screen
+
+![Victory Screen](assets/win.png)
+
+### 🎮 Main Menu
+
+![Main Menu](assets/menu.png)
+
+### 💀 Game Over Screen
+
+![Game Over Screen](assets/game_over.png)
+
+### 🏍️ Game Interface
+
+![Game Interface](assets/interface.png)
+
+### ℹ️ About Page
+
+![About Page](assets/propos.png)
+
+---
+
+## 👨‍💻 Author
+
+**Oussama Samid**
+
+---
+
+🏍️ *Explore the streets of Marrakech through Game Moto – Jamaa El Fna!*
